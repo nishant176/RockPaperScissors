@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 46.7vw;
+  background-color: #192849;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scoreboard {
+  width: 700px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin-top: 30px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  margin-left: 25px;
+}
+
+.score {
+  width: 150px;
+  height: 110px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.score h1 {
+  color: #565468;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.score p {
+  color: #2a45c2;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+
+.hands {
+  background-image: url("assets/triangle.png");
+  background-repeat: no-repeat;
+  width: 450px;
+  height: 410px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  background-position: center;
+}
+
+.scissors {
+  margin-left: 20px;
+}
+.paper {
+  margin-right: 20px;
+}
+
+.hands .hand {
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.hands .hand:hover {
+  transform: translate3d(0px, -8px, 0px);
+}
+
+.contest {
+  width: 800px;
+  display: flex;
+  margin-top: 50px;
+}
+
+.contest img {
+  width: 210px;
+  height: 210px;
+}
+
+.contest > div {
+  flex: 1;
+}
+
+.contest h1 {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contest .handImageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.referee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.referee h1 {
+  font-size: 40px;
+}
+
+.newGame {
+  background-color: #fff;
+  padding: 10px 24px;
+  border-radius: 7px;
+  cursor: pointer;
+  color: hsl(229, 24%, 31%);
+  transition: all 0.15s;
+  border: 2px solid black;
+}
+
+.newGame:hover {
+  background-color: bisque;
+  transform: translate3d(0px, -2px, 0px);
+}
